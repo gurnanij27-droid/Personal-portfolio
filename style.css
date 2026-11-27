@@ -1,4 +1,4 @@
-:root {
+root {
   --paper:     #F4F7FF;
   --white:     #FFFFFF;
   --ink:       #0E1B4D;
@@ -494,17 +494,20 @@ li .blue{
     letter-spacing: 1px;
 }
 .skills-box{
+    position: relative;
     display: grid;
-    grid-template-columns: 1fr !important;
-    gap: 25px;
-    margin-top: 35px;
-    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 48px;
 }
 .skill{
-       display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    text-align: left;
+    background: rgba(255, 255, 255, .06);
+    border: 1px solid rgba(255, 255, 255, .14);
+    border-radius: 24px;
+    border-bottom-left-radius: 6px;
+    padding: 26px;
+    transition: .3s;
 }
 .skill:hover{
     transform: translateY(-10px);
@@ -512,30 +515,17 @@ li .blue{
     background: rgba(255, 255, 255, 0.116);
 }
 .skill-main{
-    display: grid !important;
-    grid-template-columns: 65px auto !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: fit-content !important;
-    max-width: 100%;
-    margin: 0 auto !important;
-    gap: 25px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
 }
-.skill-main i {
-    width: 65px;
-    text-align: center;
-    
+.skill-main i{
+    color: #f26b3a;
+    font-size: 2rem;
 }
-
-.skill-main div {
-    text-align: left;
-}
-.skill-main h3 {
-    margin: 0 0 8px;
-}
-
-.skill-main p {
-    margin: 0;
+.skill-main h3{
+    font-family: var(--display);
 }
 .skill-main .level{
     font-family: var(--body);
