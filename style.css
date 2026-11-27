@@ -502,15 +502,11 @@ li .blue{
     margin-top: 48px;
 }
 .skill{
-    background: rgba(255, 255, 255, .06);
-    border: 1px solid rgba(255, 255, 255, .14);
-    border-radius: 24px;
-    border-bottom-left-radius: 6px;
-    padding: 26px;
-    transition: .3s;
-    display: flex;
+       display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 26px 35px;
+
 }
 .skill:hover{
     transform: translateY(-10px);
@@ -518,18 +514,21 @@ li .blue{
     background: rgba(255, 255, 255, 0.116);
 }
 .skill-main{
-    display: flex;
+    display: grid;
+    grid-template-columns: 65px 1fr;
     align-items: center;
-    gap: 18px;
-    width: 360px;
-    max-width: 100%;
+    column-gap: 25px;
+    width: 100%;
     margin-bottom: 20px;
 }
-.skill-main i{
-    width: 60px;
-    min-width: 60px;
+.skill-main i {
+    width: 65px;
     text-align: center;
-    flex-shrink: 0;
+    font-size: 2rem;
+}
+
+.skill-main div {
+    text-align: left;
 }
 .skill-main h3{
     font-family: var(--display);
