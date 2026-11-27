@@ -521,11 +521,15 @@ li .blue{
     display: flex;
     align-items: center;
     gap: 18px;
+    width: 360px;
+    max-width: 100%;
     margin-bottom: 20px;
 }
 .skill-main i{
-    color: #f26b3a;
-    font-size: 2rem;
+    width: 60px;
+    min-width: 60px;
+    text-align: center;
+    flex-shrink: 0;
 }
 .skill-main h3{
     font-family: var(--display);
